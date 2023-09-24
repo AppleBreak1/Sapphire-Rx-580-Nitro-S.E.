@@ -63,7 +63,13 @@ Based on the information provided, we can now construct the code in the order as
 
 Construct the code for the first connector (DP)
 
-      00040000 04030000 00010000 12040601
+      00040000 [type]
+      
+      00040000 04030000 [type] [flag]
+      
+      00040000 04030000 00010000 [type] [flag] [feat,pri]
+      
+      00040000 04030000 00010000 12040601 [type] [Controlflag] [feat,pri] [txmit,enc,hotplug,sense]
  
   * Note that type, flag, feat, and pri are in reverse byte order
 
@@ -84,11 +90,11 @@ ___
 **Fix for Pink Screen**
 
 
-Now that FB code is made, we can fix pink screen issue by changing the DVI connector type and controlflag to HDMI. 
+Now that FB code is made, we can fix pink screen issue by changing the connector type and controlflag of DVI to HDMI. 
 
 <br/>
 
-Modify the type and flag(In brackets below) of DVI connector
+Modify the type and flag (In brackets below) of DVI connector
 ~~~
 [04000000 04000000] 00010000 00000306      (DVI)  
 ~~~
