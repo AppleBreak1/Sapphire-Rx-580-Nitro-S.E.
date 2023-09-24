@@ -130,7 +130,7 @@ If the patch was successful, Lilu log should look like below (Also contains the 
 <img width="865" alt="4" src="https://github.com/AppleBreak1/Sapphire-Rx-580-Nitro-S.E./assets/97265013/8a4c2b1f-7587-4dfe-8210-adbaf44839eb">
 
 
-Resources
+# Resources
 
 - Acidanthera's [WhateverGreen](https://github.com/acidanthera/WhateverGreen)
 
