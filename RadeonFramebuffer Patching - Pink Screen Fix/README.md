@@ -37,7 +37,7 @@ ___
 
 Once you have reached the desktop with the prep settings, open the Lilu log file in /var/log/Lilu_xxx.txt, search for "HDMI" or "DP" and navigate to WhateverGreen log for the connector information.
 
-<img width="861" alt="Screenshot 2023-09-23 at 12 33 01 PM" src="https://github.com/AppleBreak1/Test/assets/97265013/2cc47148-2adb-4851-a09e-7e0efc69bfbf">
+<img width="861" alt="270129737-2cc47148-2adb-4851-a09e-7e0efc69bfbf" src="https://github.com/AppleBreak1/Sapphire-Rx-580-Nitro-S.E./assets/97265013/ac3fa956-c0a2-466c-b36d-c3042c7534e8">
 
 ___
 
@@ -84,34 +84,35 @@ ___
 **Fix for Pink Screen**
 
 
-Now that FB code is made, we can now fix pink screen issue by changing the DVI connector type and controlflag to HDMI. 
+Now that FB code is made, we can fix pink screen issue by changing the DVI connector type and controlflag to HDMI. 
 
 <br/>
 
-Modify the type and flag of DVI
+Modify the type and flag(In brackets below) of DVI connector
 ~~~
-[04000000 04000000] 00010000 00000306 
+[04000000 04000000] 00010000 00000306      (DVI)  
 ~~~
 
 To HDMI
 ~~~
-[00080000 04020000] 00010000 00000306
+[00080000 04020000] 00010000 00000306      (HDMI)  
 ~~~
 
-Now the data to be added to config.plist should look like
+Now the data to be added in config.plist should look like
 ~~~
 00040000 04030000 00010000 12040601    
 00040000 04030000 00010000 22050403    
 00080000 04020000 00010000 11020102    
 00080000 04020000 00010000 21030504    
-00080000 04020000 00010000 00000306
+00080000 04020000 00010000 00000306   <---- Patched
 ~~~
 ___
 
 **Update the Config.plist**
 
 DeviceProperties-> Device path (PciRoot(0x0)...) -> connectors | Data | Patched Framebuffer
-<img width="1110" alt="Screenshot 2023-09-23 at 2 57 58 PM" src="https://github.com/AppleBreak1/Test/assets/97265013/2d0a623d-c2cf-448d-9679-e7be8f66689a">
+
+<img width="1110" alt="270135119-2d0a623d-c2cf-448d-9679-e7be8f66689a" src="https://github.com/AppleBreak1/Sapphire-Rx-580-Nitro-S.E./assets/97265013/8bad2a22-48df-429c-83a6-4a4e8cc81e24">
 
 ___
 
@@ -120,7 +121,8 @@ ___
 If the patch was successful, Lilu log should look like below (Also contains the result of patching connectors priority)
 
 
-<img width="865" alt="4" src="https://github.com/AppleBreak1/Test/assets/97265013/0d7d2ca9-e0f2-4e0b-807a-9afc6c077246">
+<img width="865" alt="270137107-0d7d2ca9-e0f2-4e0b-807a-9afc6c077246" src="https://github.com/AppleBreak1/Sapphire-Rx-580-Nitro-S.E./assets/97265013/ea5d1d82-14da-4110-b22c-e34a1cbd4846">
+
 
 
 Resources
