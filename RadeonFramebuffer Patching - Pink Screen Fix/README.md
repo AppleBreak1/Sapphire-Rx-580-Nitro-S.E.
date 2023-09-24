@@ -27,7 +27,7 @@ Steps:
 1. Gather the connector information from the Lilu log (Look for the lines where the AMD GPU's connectors information is being updated)
 2. Construct frambuffer code
 3. From the constructed framebuffer, modify the DVI connector type to HDMI
-4. Update Config.plist (Add array of bytes under the device path of dGPU as a data for "connectors" property)
+4. Update Config.plist (Add array of bytes under the device path of dGPU as the data for "connectors" property)
 
 
 ___
