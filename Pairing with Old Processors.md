@@ -46,7 +46,16 @@ Note 2: ShikiGVA patches are disabled for Big Sur+ and is replaced by unfairgva.
 
 <img width="686" alt="1" src="https://github.com/user-attachments/assets/53103a05-5fce-49e2-ad66-de7d2baeb713" />
 
+# Connectivity Issues
 
+When booting in legacy mode, following issues are present
+
+- HDMI -> black screen on boot
+- DVI to DVI -> black screen on boot
+- DVI to HDMI -> pink screen on boot (also present on UEFI mode)
+
+  Workaround: Use DP ports or when having a multiple monitor setup, have the system go through sleep/wake cycle to get screens on HDMI or/and DVI ports.
+  
 # Resource
 
 - [ShikiGVAPatches](https://github.com/acidanthera/WhateverGreen/blob/bc1b7c334eefd00a9cf30429d686764c18ed59ae/WhateverGreen/kern_shiki.hpp#L35) 
