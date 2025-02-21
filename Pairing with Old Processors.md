@@ -38,7 +38,7 @@ Fixing DRM and Hardware Encoding/Decoding
 | SMBIOS 	| GVA Patches | Safari 	| TV+ | Apple Music | H264 Enc | H265 Enc |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 |  iMac10,1 | shikigva=144<br> shiki-id=Mac-7BA5B2D9E42DDD94 | ❌ | ✅ | ✅ | ❌ | ❌ |
-|  iMac10,1 | shikigva=160<br> shiki-id=Mac-7BA5B2D9E42DDD94 | ❌ | ❌ | ✅ | ❌ | ❌ |
+|  iMac10,1 | shikigva=160<br> shiki-id=Mac-7BA5B2D9E42DDD94 | ❌ | ❌ | ❌ | ✅ | ❌ |
 |  iMacPro1,1 | shikigva=80 | ✅ | ✅ | ✅ | ✅ | ✅ |
 
 
