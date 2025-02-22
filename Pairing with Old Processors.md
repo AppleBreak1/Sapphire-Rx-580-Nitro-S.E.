@@ -33,7 +33,7 @@ Fixing DRM and Hardware Encoding/Decoding
 |  iMacPro1,1 | shikigva=16 | ❌ | ✅ | ✅ | ✅ | ✅ |
 |  iMac10,1 | shikigva=16 | ❌ | ✅ | ❌ | ❌ | ❌ |
 |  iMac10,1 | shikigva=32<br> shiki-id=Mac-7BA5B2D9E42DDD94 | ❌ | ❌ | ✅ | ❌ | ✅ |
-|  iMac10,1 | shikigva=144<br> shiki-id=Mac-7BA5B2D9E42DDD94<Br> [AppleGVA Overrides](https://github.com/acidanthera/WhateverGreen/blob/master/Manual/FAQ.Chart.md) | ❌ | ✅  | ❌ | ❌ | ✅ |
+|  iMac10,1 | shikigva=16<br> [AppleGVA Overrides](https://github.com/acidanthera/WhateverGreen/blob/master/Manual/FAQ.Chart.md) | ❌ | ✅  | ❌ | ❌ | ✅ |
 
 - Catalina
    
@@ -42,7 +42,7 @@ Fixing DRM and Hardware Encoding/Decoding
 |  iMacPro1,1 | shikigva=16 | ✅ | ✅ | ✅ | ✅ | ✅ |  ✅ |
 |  iMac10,1 | shikigva=16 | ❌ | ✅ | ✅ | ❌ | ❌ | ❌ |
 |  iMac10,1 | shikigva=32<br> shiki-id=Mac-7BA5B2D9E42DDD94 | ❌ | ❌ | ❌ | ✅ | ❌ | ✅ |
-|  iMac10,1 | shikigva=144<br> shiki-id=Mac-7BA5B2D9E42DDD94 | ❌ | ✅ | ✅ | ❌ | ❌ | ✅ |
+|  iMac10,1 | shikigva=144<br> | ❌ | ✅ | ✅ | ❌ | ❌ | ✅ |
 
 
 Note 1: For H265(HEVC) encoding capability, switching to iMacPro1,1 is enough<br>
@@ -70,7 +70,15 @@ When booting in legacy mode, following issues are present
 - DVI to HDMI -> pink screen on boot (also present on UEFI mode)
 
   Workaround: Use DP ports or when having a multiple monitor setup, have the system go through sleep/wake cycle to get screens on HDMI or/and DVI ports.
-  
+
+# Hardware Encoding/Decoding Monitoring Tools  
+
+- OpenGL Driver Monitor (Included in Additional Tools for Xcode)
+- [AMD GPU Menue](https://www.tonymacx86.com/threads/amd-radeon-performance-enhanced-ssdt.296555/page-65#post-2120400) developed by mitch_de
+
+
+
+
 # Resource
 
 - [ShikiGVAPatches](https://github.com/acidanthera/WhateverGreen/blob/bc1b7c334eefd00a9cf30429d686764c18ed59ae/WhateverGreen/kern_shiki.hpp#L35) 
