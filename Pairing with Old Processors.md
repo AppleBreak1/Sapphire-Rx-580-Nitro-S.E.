@@ -51,7 +51,7 @@ Note 2: End results of shikigva patches
 - shikigva=16 (Fixes DRM)<br>
 - shikigva=32 (Enables H265/HEVC hardware decoding when iMac10,1 SMBIOS is used)<br>
 - shiki-id=Mac-7BA5B2D9E42DDD94 (Injects iMacPro1,1 board-ID, enables H264 hardware encoding when used with shikigva=32 on iMac10,1 SMBIOS)<br>
-- shikigva=16 and shikigva 32 cannot be used together
+- shikigva 16 and 32 cannot be used together
   
 Note 3: ShikiGVA patches are disabled for Big Sur+ and is replaced by unfairgva.        
         
