@@ -8,7 +8,7 @@ Applicable Processors
 
 Requirements
 
-- macOS: Sierra or newer (Sierra does not have requirement for SSE4.2 for AMD Drivers)
+- macOS: Sierra or newer (Sierra does not have requirement for SSE4.2 for AMD drivers)
 - [Mousse](https://forums.macrumors.com/threads/mp3-1-others-sse-4-2-emulation-to-enable-amd-metal-driver.2206682/page-8): Required for High Sierra+ (Partial SSE4.2 emulator)
 
     Note 1: Without the SSE4.2 support, AMD metal drivers do not load on High Sierra+ (Black Screen)<br>
