@@ -28,12 +28,12 @@ Fixing DRM and Hardware Encoding/Decoding
 
 - Mojave
 
-| SMBIOS 	| GVA Patches| Safari 	| iTunes | H264 Enc | H265 Enc | H265 Dec |
+| SMBIOS 	| GVA Patches| Safari | iTunes | H264 Enc | H265 Enc | H265 Dec |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 |  iMacPro1,1 | shikigva=16 | ❌ | ✅ | ✅ | ✅ | ✅ |
 |  iMac10,1 | shikigva=16 | ❌ | ✅ | ❌ | ❌ | ❌ |
 |  iMac10,1 | shikigva=32<br> shiki-id=Mac-7BA5B2D9E42DDD94 | ❌ | ❌ | ✅ | ❌ | ✅ |
-
+|  iMac10,1 | shikigva=144<br> shiki-id=Mac-7BA5B2D9E42DDD94<Br> [AppleGVA Overrides](https://github.com/acidanthera/WhateverGreen/blob/master/Manual/FAQ.Chart.md) | ❌ | ✅  | ❌ | ❌ | ✅ |
 
 - Catalina
    
@@ -42,7 +42,7 @@ Fixing DRM and Hardware Encoding/Decoding
 |  iMacPro1,1 | shikigva=16 | ✅ | ✅ | ✅ | ✅ | ✅ |  ✅ |
 |  iMac10,1 | shikigva=16 | ❌ | ✅ | ✅ | ❌ | ❌ | ❌ |
 |  iMac10,1 | shikigva=32<br> shiki-id=Mac-7BA5B2D9E42DDD94 | ❌ | ❌ | ❌ | ✅ | ❌ | ✅ |
-
+|  iMac10,1 | shikigva=144<br> shiki-id=Mac-7BA5B2D9E42DDD94 | ❌ | ✅ | ✅ | ❌ | ❌ | ✅ |
 
 
 Note 1: For H265(HEVC) encoding capability, switching to iMacPro1,1 is enough<br>
@@ -51,6 +51,8 @@ Note 2: End results of shikigva patches
 - shikigva=16 (Fixes DRM)<br>
 - shikigva=32 (Enables H265/HEVC hardware decoding when iMac10,1 SMBIOS is used)<br>
 - shiki-id=Mac-7BA5B2D9E42DDD94 (Injects iMacPro1,1 board-ID, enables H264 hardware encoding when used with shikigva=32 on iMac10,1 SMBIOS)<br>
+- Shikigva=144 (16 + 128, Fixes DRM and enables H265 hardware decoding with iMac10,1 SMBIOS on Catalina)
+- gvaForceAMDKE(Override) enables H265 hardware decoding on iMac10,1 SMBIOS
 - shikigva 16 and 32 cannot be used together
   
 Note 3: ShikiGVA patches are disabled for Big Sur+ and is replaced by unfairgva.        
