@@ -61,6 +61,15 @@ Note 3: ShikiGVA patches are disabled for Big Sur+ and is replaced by unfairgva.
 
 <img width="686" alt="1" src="https://github.com/user-attachments/assets/53103a05-5fce-49e2-ad66-de7d2baeb713" />
 
+# Hardware Encoding/Decoding Monitoring Tools  
+
+- OpenGL Driver Monitor (Included in Additional Tools for Xcode)<br>
+- [AMD GPU Menue](https://www.tonymacx86.com/threads/amd-radeon-performance-enhanced-ssdt.296555/page-65#post-2120400) developed by mitch_de<br>
+
+   <img width="503" alt="1" src="https://github.com/user-attachments/assets/c99bffd7-7ae3-4fc1-beb4-eb3c3c84c99c" />
+
+
+
 # Connectivity Issues
 
 When booting in legacy mode, following issues are present
@@ -70,13 +79,6 @@ When booting in legacy mode, following issues are present
 - DVI to HDMI -> pink screen on boot (also present on UEFI mode)
 
   Workaround: Use DP ports or when having a multiple monitor setup, have the system go through sleep/wake cycle to get screens on HDMI or/and DVI ports.
-
-# Hardware Encoding/Decoding Monitoring Tools  
-
-- OpenGL Driver Monitor (Included in Additional Tools for Xcode)
-- [AMD GPU Menue](https://www.tonymacx86.com/threads/amd-radeon-performance-enhanced-ssdt.296555/page-65#post-2120400) developed by mitch_de
-
-
 
 
 # Resource
