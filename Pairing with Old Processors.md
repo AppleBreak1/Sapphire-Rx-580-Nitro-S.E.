@@ -72,7 +72,7 @@ Note 3: ShikiGVA patches are disabled for Big Sur+ and is replaced by unfairgva.
 
 # Connectivity Issues
 
-When booting in legacy mode, following issues are present
+When booting in non-UEFI mode, following issues are present
 
 - HDMI -> black screen on boot
 - DVI to DVI -> black screen on boot
