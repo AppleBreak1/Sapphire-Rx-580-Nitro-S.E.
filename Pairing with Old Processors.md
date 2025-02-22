@@ -21,29 +21,40 @@ Fixing DRM and Hardware Encoding/Decoding
 
 | SMBIOS 	| GVA Patches| Safari 	| TV+ | Apple Music | H264 Enc | H265 Enc | H265 Dec |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-|  iMac10,1 | unfairgva=7 | ❌ | ✅ | ✅ | ✅ | ❌ | ✅ |
 |  iMacPro1,1 | unfairgva=1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+|  iMac10,1 | unfairgva=7 | ❌ | ✅ | ✅ | ✅ | ❌ | ✅ |
+
 
 
 - Mojave
 
 | SMBIOS 	| GVA Patches| Safari 	| iTunes | H264 Enc | H265 Enc | H265 Dec |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-|  iMac10,1 | shikigva=16<br> shiki-id=Mac-7BA5B2D9E42DDD94 | ❌ | ✅ | ❌ | ❌ | ❌ |
+|  iMacPro1,1 | shikigva=16 | ❌ | ✅ | ✅ | ✅ | ✅ |
+|  iMac10,1 | shikigva=16 | ❌ | ✅ | ❌ | ❌ | ❌ |
 |  iMac10,1 | shikigva=32<br> shiki-id=Mac-7BA5B2D9E42DDD94 | ❌ | ❌ | ✅ | ❌ | ✅ |
-|  iMacPro1,1 | shikigva=80 | ❌ | ✅ | ✅ | ✅ | ✅ |
+
 
 - Catalina
    
 | SMBIOS 	| GVA Patches | Safari 	| TV+ | Apple Music | H264 Enc | H265 Enc | H265 Dec |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-|  iMac10,1 | shikigva=16<br> shiki-id=Mac-7BA5B2D9E42DDD94 | ❌ | ✅ | ✅ | ❌ | ❌ | ❌ |
+|  iMacPro1,1 | shikigva=16 | ✅ | ✅ | ✅ | ✅ | ✅ |  ✅ |
+|  iMac10,1 | shikigva=16 | ❌ | ✅ | ✅ | ❌ | ❌ | ❌ |
 |  iMac10,1 | shikigva=32<br> shiki-id=Mac-7BA5B2D9E42DDD94 | ❌ | ❌ | ❌ | ✅ | ❌ | ✅ |
-|  iMacPro1,1 | shikigva=80 | ✅ | ✅ | ✅ | ✅ | ✅ |  ✅ |
+
 
 
 Note 1: For H265(HEVC) encoding capability, switching to iMacPro1,1 is enough<br>
-Note 2: ShikiGVA patches are disabled for Big Sur+ and is replaced by unfairgva.
+
+Note 2: End results of shikigva patches
+- shikigva=16 (Fixes DRM)<br>
+- shikigva=32 (Enables H265/HEVC hardware decoding when iMac10,1 SMBIOS is used)<br>
+- shiki-id=Mac-7BA5B2D9E42DDD94 (Injects iMacPro1,1 board-ID, enables H264 hardware encoding when used with shikigva=32 on iMac10,1 SMBIOS)<br>
+- shikigva=16 and shikigva 32 cannot be used together
+  
+Note 3: ShikiGVA patches are disabled for Big Sur+ and is replaced by unfairgva.        
+        
 # Property Injection
 
 <img width="686" alt="1" src="https://github.com/user-attachments/assets/53103a05-5fce-49e2-ad66-de7d2baeb713" />
