@@ -19,27 +19,27 @@ Fixing DRM and Hardware Encoding/Decoding
 
 - Big Sur+ 
 
-| SMBIOS 	| GVA Patches| Safari 	| TV+ | Apple Music | H264 Enc | H265 Enc |
-| :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-|  iMac10,1 | unfairgva=7 | ❌ | ✅ | ✅ | ✅ | ❌ |
-|  iMacPro1,1 | unfairgva=1 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| SMBIOS 	| GVA Patches| Safari 	| TV+ | Apple Music | H264 Enc | H265 Enc | H265 Dec |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+|  iMac10,1 | unfairgva=7 | ❌ | ✅ | ✅ | ✅ | ❌ | ✅ |
+|  iMacPro1,1 | unfairgva=1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
 
 - Mojave
 
-| SMBIOS 	| GVA Patches| Safari 	| iTunes | H264 Enc | H265 Enc |
-| :---: | :---: | :---: | :---: | :---: | :---: |
-|  iMac10,1 | shikigva=16<br> shiki-id=Mac-7BA5B2D9E42DDD94 | ❌ | ✅ | ❌ | ❌ |
-|  iMac10,1 | shikigva=32<br> shiki-id=Mac-7BA5B2D9E42DDD94 | ❌ | ❌ | ✅ | ❌ |
-|  iMacPro1,1 | shikigva=80 | ❌ | ✅ | ✅ | ✅ |
+| SMBIOS 	| GVA Patches| Safari 	| iTunes | H264 Enc | H265 Enc | H265 Dec |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+|  iMac10,1 | shikigva=16<br> shiki-id=Mac-7BA5B2D9E42DDD94 | ❌ | ✅ | ❌ | ❌ | ❌ |
+|  iMac10,1 | shikigva=32<br> shiki-id=Mac-7BA5B2D9E42DDD94 | ❌ | ❌ | ✅ | ❌ | ✅ |
+|  iMacPro1,1 | shikigva=80 | ❌ | ✅ | ✅ | ✅ | ✅ |
 
 - Catalina
    
-| SMBIOS 	| GVA Patches | Safari 	| TV+ | Apple Music | H264 Enc | H265 Enc |
-| :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-|  iMac10,1 | shikigva=16<br> shiki-id=Mac-7BA5B2D9E42DDD94 | ❌ | ✅ | ✅ | ❌ | ❌ |
-|  iMac10,1 | shikigva=32<br> shiki-id=Mac-7BA5B2D9E42DDD94 | ❌ | ❌ | ❌ | ✅ | ❌ |
-|  iMacPro1,1 | shikigva=80 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| SMBIOS 	| GVA Patches | Safari 	| TV+ | Apple Music | H264 Enc | H265 Enc | H265 Dec |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+|  iMac10,1 | shikigva=16<br> shiki-id=Mac-7BA5B2D9E42DDD94 | ❌ | ✅ | ✅ | ❌ | ❌ | ❌ |
+|  iMac10,1 | shikigva=32<br> shiki-id=Mac-7BA5B2D9E42DDD94 | ❌ | ❌ | ❌ | ✅ | ❌ | ✅ |
+|  iMacPro1,1 | shikigva=80 | ✅ | ✅ | ✅ | ✅ | ✅ |  ✅ |
 
 
 Note 1: For H265(HEVC) encoding capability, switching to iMacPro1,1 is enough<br>
