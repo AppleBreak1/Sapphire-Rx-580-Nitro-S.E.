@@ -9,7 +9,7 @@ Applicable Processors
 Requirements
 
 - macOS: Sierra or newer (Sierra does not have requirement for SSE4.2 for AMD drivers)
-- [Mousse](https://forums.macrumors.com/threads/mp3-1-others-sse-4-2-emulation-to-enable-amd-metal-driver.2206682/page-8): Required for High Sierra+ (Partial SSE4.2 emulator)
+- SSE4.2 Emulator: [Mousse](https://forums.macrumors.com/threads/mp3-1-others-sse-4-2-emulation-to-enable-amd-metal-driver.2206682) (Partial SSE4.2 emulation is required for High Sierra+)
 
     Note 1: Without the SSE4.2 support, AMD metal drivers do not load on High Sierra+ (Black Screen)<br>
     Note 2: The [patched](https://github.com/dortania/OpenCore-Legacy-Patcher/tree/main/payloads/Kexts/SSE) version of MouSSE by OCLP developers is required for Ventura+
