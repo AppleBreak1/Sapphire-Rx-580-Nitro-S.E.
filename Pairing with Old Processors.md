@@ -19,7 +19,7 @@ Fixing DRM and Hardware Encoding/Decoding
 
 - Big Sur+ 
 
-| SMBIOS 	| GVA Patches| Safari 	| TV+ | Apple Music | H264 Enc | H265 Enc | H265 Dec |
+| SMBIOS 	| GVA Patches| Safari 	| 🍎TV+ | Apple Music | H264 Enc | H265 Enc | H265 Dec |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 |  iMacPro1,1 | unfairgva=1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 |  iMac10,1 | unfairgva=7 | ❌ | ✅ | ✅ | ✅ | ❌ | ✅ |
@@ -37,7 +37,7 @@ Fixing DRM and Hardware Encoding/Decoding
 
 - Catalina
    
-| SMBIOS 	| GVA Patches | Safari 	| TV+ | Apple Music | H264 Enc | H265 Enc | H265 Dec |
+| SMBIOS 	| GVA Patches | Safari 	| 🍎TV+ | Apple Music | H264 Enc | H265 Enc | H265 Dec |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 |  iMacPro1,1 | shikigva=16 | ✅ | ✅ | ✅ | ✅ | ✅ |  ✅ |
 |  iMac10,1 | shikigva=16 | ❌ | ✅ | ✅ | ❌ | ❌ | ❌ |
