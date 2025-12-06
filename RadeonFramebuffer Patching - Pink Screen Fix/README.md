@@ -2,7 +2,7 @@
 
 For AMD HD 7xxx series or newer 
 
-One of the many features of WhateverGreen is that it supports RadeonFramebuffer patching via device property injection. This can be used to manually inject custom connectors to fix black screen issue or the famous HDMI-DVI connection pink screen issue.
+One of the many features of WhateverGreen is that it supports RadeonFramebuffer patching via device property injection. This can be used to manually inject custom connectors to fix black screen issue or the infamous pink screen issue with DVI-HDMI connection.
 
 Specifying custom connectors can mainly help with
 
