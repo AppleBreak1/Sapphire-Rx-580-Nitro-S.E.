@@ -5,6 +5,8 @@ Generally, on non-blessed variant of Polaris GPU(Not a Mac edition card), the "P
 
 To change this behavior, overriding PP_EnableLoadFalconSmcFirmware to 0x1 with the help of WhateverGreen via DeviceProperty injection is necessary. If successful, the idle power consumption reported by the gpu monitor apps should be around 30W on idle.
 
+This may also fix poor performance issue after the sleep/wake cycle.
+
 Note: If Orinoco framebuffer (Used by very few of the Mac edition variant) is loaded, PP_EnableLoadFalconSmcFirmware is set to 0x1 by default.
 
 <img width="1107" alt="3" src="https://github.com/user-attachments/assets/e68ff99d-ec3f-40f4-9f6d-51fe78f8f5ad" />
