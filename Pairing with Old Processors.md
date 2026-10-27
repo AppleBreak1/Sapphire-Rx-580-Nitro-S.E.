@@ -12,8 +12,20 @@ Requirements
 - SSE4.2 Emulator: [MouSSE](https://forums.macrumors.com/threads/mp3-1-others-sse-4-2-emulation-to-enable-amd-metal-driver.2206682) (Partial SSE4.2 emulation is required for High Sierra+)
 
     Note 1: Without the SSE4.2 support, AMD metal drivers do not load on High Sierra+ (Black Screen)<br>
-    Note 2: The [patched](https://github.com/dortania/OpenCore-Legacy-Patcher/tree/main/payloads/Kexts/SSE) version of MouSSE by OCLP developers is required for Ventura+
+    Note 2: The [patched](https://github.com/dortania/OpenCore-Legacy-Patcher/tree/main/payloads/Kexts/SSE) version of MouSSE by OCLP developers is required for Ventura+<br>
+- For Ventura+, AMD graphics stack requires AVX2 instruction set. For non-AVX2 systems, [OCLP](https://github.com/dortania/Opencore-Legacy-Patcher)'s Polaris patch is needed to bring back the old drivers.
 
+
+    Preparation for the OCLP system root patching
+
+       - SecureBootModel -> Disabled
+       - csr-active-config -> <03080000>
+       - boot-args -> -amd_no_dgpu_accel   (This boot-arg is for booting in VESA mode to avoid black screen)
+       - boot-args -> amfi=0x80            (Either use this boot-arg or inject AMFIPass.kext which is more preferable) 
+       - AMFIPass.Kext                     (You may use -amfipassbeta boot-arg when loading this kext on unsupported OS; currently needed for Tahoe)
+
+     Note1: Once the patches are successfully installed, make sure to remove -amd_no_dgpu_accel<br>
+     Note2: Do make sure that the systems is connected online as patches require downloading corresponding Kernel Debug Kit unless installed manually.  
 ___
 Fixing DRM and Hardware Encoding/Decoding
 
